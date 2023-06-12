@@ -9,7 +9,7 @@ const Galaxy = (props) => {
   };
   const [suka,setSuka] = useState(false);
   const handleClick2 = () => {
-    setDesk(!suka)
+    setSuka(!suka)
   };
   return (
     <figure key={props.id}>
