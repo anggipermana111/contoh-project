@@ -21,7 +21,7 @@ const Galaxy = (props) => {
         <button onClick={handleClick} >selengkapnya</button>
         <button onClick={handleClick2} >
           {
-            suka?"suka":"batal suka"
+            suka?"batal suka":"suka"
           }
         </button>
         <hr />
