@@ -7,6 +7,10 @@ const Galaxy = (props) => {
   const handleClick = () => {
     setDesk(!desk)
   };
+  const [suka,setSuka] = useState(false);
+  const handleClick2 = () => {
+    setDesk(!suka)
+  };
   return (
     <figure key={props.id}>
         <img src={props.gambar} alt={props.nama} />
@@ -15,6 +19,11 @@ const Galaxy = (props) => {
         <p>{props.diameter}</p>
         </figcaption>
         <button onClick={handleClick} >selengkapnya</button>
+        <button onClick={handleClick2} >
+          {
+            suka?"suka":"batal suka"
+          }
+        </button>
         <hr />
         {
           desk?<p>{props.deskripsi}</p>:<p></p>
