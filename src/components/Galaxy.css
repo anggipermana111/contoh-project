@@ -17,6 +17,8 @@ figure {
     }
     
     > button {
+        padding: 10px 0;
+        border-radius: 10px; 
         width: 50%;
     }
 }
